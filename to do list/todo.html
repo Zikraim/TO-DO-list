@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="todo.css">
+
+    <!-- Meta -->
+    <meta name="description" content="A simple and efficient to-do list application built with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <!-- Main App Container -->
+    <main class="app">
+
+        <!-- Header -->
+        <header class="app-header">
+            <h1>📝 To-Do List</h1>
+            <p class="subtitle">Organize your tasks and boost productivity</p>
+        </header>
+
+        <!-- Task Input Section -->
+        <section class="task-input">
+            <label for="taskInput" class="visually-hidden">New Task</label>
+
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="What do you need to do?"
+                autocomplete="off"
+            >
+
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <!-- Task List Section -->
+        <section class="task-list-section">
+            <h2 class="section-title">Your Tasks</h2>
+
+            <ul id="taskList" aria-live="polite">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- JavaScript (IMPORTANT: at the end) -->
+    <script src="todo.js"></script>
+
+</body>
+</html>
